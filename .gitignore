@@ -1,0 +1,13 @@
+.DS_Store
+/build
+/.build
+/.swiftpm
+/*.xcodeproj
+.publish
+# Generated static content
+Output/*
+# Generated tailwind file
+Resources/styles.css
+
+node_modules
+
