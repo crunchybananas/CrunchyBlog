@@ -1,4 +1,5 @@
 ---
+authors: Cory Loken
 date: 2022-07-27 15:41
 description: Using Tailwind with Publish.
 tags: howto, article

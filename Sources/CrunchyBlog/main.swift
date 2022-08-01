@@ -15,11 +15,12 @@ struct Tile {
 struct CrunchyBlog: Website {
   enum SectionID: String, WebsiteSectionID {
     // Add the sections that you want your website to contain here:
-    case posts
+    case articles
   }
   
   struct ItemMetadata: WebsiteItemMetadata {
     // Add any site-specific metadata that you want to use here.
+    var authors: [String]
   }
   
   // Update these properties to configure your website:
@@ -63,7 +64,7 @@ try CrunchyBlog().publish(
         guard section.title.isEmpty else { return }
         
         switch section.id {
-        case .posts:
+        case .articles:
           section.title = "Crunchy Blog"
         }
       }

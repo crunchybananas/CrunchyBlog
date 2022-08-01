@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:tailwind": "tailwindcss build -i ./Resources/BasicTheme/theme.css -o ./Resources/styles.css -c ./Resources/BasicTheme/tailwind.config.js"
+    "build:tailwind": "tailwindcss build -i ./Resources/CrunchyTheme/theme.css -o ./Resources/styles.css -c ./Resources/CrunchyTheme/tailwind.config.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.4",

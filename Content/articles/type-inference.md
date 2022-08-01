@@ -1,4 +1,5 @@
 ---
+authors: Cory Loken
 date: 2022-07-25 15:41
 description: Talking about type inference.
 tags: howto, article

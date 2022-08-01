@@ -25,6 +25,7 @@ internal struct ItemList<CrunchyBlog: Website>: Component {
           Link(item.title, url: item.path.absoluteString)
         }
           .class("flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white")
+        
         ItemTagList(item: item, site: site)
         Paragraph(item.description)
           .class("mb-4 text-base font-normal text-gray-500 dark:text-gray-400")
