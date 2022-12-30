@@ -3,7 +3,7 @@
 WIP using Publish https://github.com/johnsundell/publish.git
 
 # Build
-`yarn tailwind:build` \
+`yarn build:tailwind` \
 open package in xcode and run
 
 # Local Preview

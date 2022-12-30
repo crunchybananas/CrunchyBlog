@@ -33,6 +33,6 @@ internal struct ItemList<CrunchyBlog: Website>: Component {
       .class("mb-10 ml-6")
     }
     .listStyle(.ordered)
-    .class("item-list relative border-l border-gray-200 dark:border-gray-700")
+    .class("item-list relative border-l border-gray-200 dark:border-gray-700 dark:bg-slate-900")
   }
 }
