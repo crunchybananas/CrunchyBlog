@@ -9,30 +9,37 @@ import Foundation
 import Plot
 import Publish
 
-internal struct ItemList<CrunchyBlog: Website>: Component {
+// Used to be this, but was causing issue with items.
+//internal struct ItemList<CrunchyBlog>: Component {
+
+internal struct ItemList: Component {
   var items: [Item<CrunchyBlog>]
   var site: CrunchyBlog
   
   var body: Component {
     List(items) { item in
       Article {
-        Span {
-          Image(URL(string: "https://nuxt-tailwind-blog.netlify.app/_nuxt/img/academy.ceb301b.svg")!)
-            .class("w-3 h-3 text-blue-600 dark:text-blue-400")
-        }
-        .class("flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900")
         H3 {
           Link(item.title, url: item.path.absoluteString)
         }
-          .class("flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white")
+        .class("flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white")
         
-        ItemTagList(item: item, site: site)
+        Paragraph(content: {
+          Text(item.metadata.authors.joined(separator: ", "))
+          Text(" • ")
+          Text(item.date.formatted(date: .long, time: .omitted))
+        })
+        .class("text-sm")
         Paragraph(item.description)
           .class("mb-4 text-base font-normal text-gray-500 dark:text-gray-400")
+        ItemTagList(item: item, site: site)
       }
-      .class("mb-10 ml-6")
+      .class("mb-10")
+      .class("container mx-auto overflow-hidden rounded-lg shadow-sm scrollbar-none")
+      .class("space-y-8 dark:bg-gray-800 dark:text-gray-50 p-6")
     }
     .listStyle(.ordered)
-    .class("item-list relative border-l border-gray-200 dark:border-gray-700 dark:bg-slate-900")
+    .class("item-list relative dark:border-gray-700 dark:bg-slate-900")
+    .class("max-w-4xl py-16 mx-auto space-y-12")
   }
 }

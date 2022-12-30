@@ -47,8 +47,10 @@ extension Theme where Site == CrunchyBlog {
                   H3("Mobile Apps").class("font-bold text-xl mb-2")
                   Paragraph("Let's work together to create and deliver your mobile app ideas tothe world.")
                     .class("text-gray-700 text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
               Div {
                 Image(URL(string: "images/tile_2.jpg")!)
                   .class("w-full")
@@ -56,8 +58,10 @@ extension Theme where Site == CrunchyBlog {
                   H3("Web Apps").class("font-bold text-xl mb-2")
                   Paragraph("With years of combined experience, our team is ready to help you create ambitious web applications that run in any modern browser.")
                     .class("text-gray-700 text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
               Div {
                 Image(URL(string: "images/tile_3.jpg")!)
                   .class("w-full")
@@ -65,10 +69,14 @@ extension Theme where Site == CrunchyBlog {
                   H3("Consulting").class("font-bold text-xl mb-2")
                   Paragraph("We can join forces with your existing development team or work on our own to transform your vision into a lasting reality.")
                     .class("text-gray-700 text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
-            }.class("grid grid-cols-1 md:grid-cols-3 gap-4 bg-white")
-          }.class("bg-cb-light-gray ml-auto mr-auto px-8 py-16")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto rounded overflow-hidden shadow-lg")
+            }
+            .class("grid grid-cols-1 md:grid-cols-3 gap-4 bg-white")
+          }
+          .class("bg-cb-light-gray ml-auto mr-auto px-8 py-16")
           
           Wrapper {
             H2("The Scene Behind the Screen")
@@ -83,8 +91,10 @@ extension Theme where Site == CrunchyBlog {
                   H3("API Design").class("font-bold text-xl mb-2")
                   Paragraph("We are experts at sending and receiving data between client apps and servers.")
                     .class("text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto")
               Div {
                 Image(URL(string: "images/tile_5.png")!)
                   .class("w-2/4 mx-auto")
@@ -92,8 +102,10 @@ extension Theme where Site == CrunchyBlog {
                   H3("Database Optimization").class("font-bold text-xl mb-2")
                   Paragraph("We can cook up a relational or document-backed database design to suit your app's needs.")
                     .class("text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto")
               Div {
                 Image(URL(string: "images/tile_6.png")!)
                   .class("w-2/4 mx-auto")
@@ -101,18 +113,24 @@ extension Theme where Site == CrunchyBlog {
                   H3("E-commerce").class("font-bold text-xl mb-2")
                   Paragraph("Sell goods or services through your app? Awesome. So do we. And we'd love to get you setup too.")
                     .class("text-base")
-                }.class("px-6 py-4")
-              }.class("max-w-sm mx-auto")
-            }.class("grid grid-cols-1 md:grid-cols-3 gap-4")
-          }.class("bg-cb-dark-blue text-white ml-auto mr-auto px-8 py-16")
+                }
+                .class("px-6 py-4")
+              }
+              .class("max-w-sm mx-auto")
+            }
+            .class("grid grid-cols-1 md:grid-cols-3 gap-4")
+          }
+          .class("bg-cb-dark-blue text-white ml-auto mr-auto px-8 py-16")
           Wrapper {
             // Blockquote {
             Div {
               H3("“From Apples to Bananas, these code monkeys write code that’s functional AND elegant.”").class("p1 text-center font-bold")
               Paragraph("_________________").class("text-center")
               Paragraph("~ Rob").class("text-center")
-            }.class("p-12 md:p-24")
-          }.class("bg-cb-light-blue blue-wood text-white ml-auto mr-auto px-8 py-16")
+            }
+            .class("p-12 md:p-24")
+          }
+          .class("bg-cb-light-blue blue-wood text-white ml-auto mr-auto px-8 py-16")
           
           Wrapper {
             H2("The Crunchy Bunch").class("font-extrabold text-3xl text-center mb-16 text-cb-dark-blue")
@@ -124,8 +142,10 @@ extension Theme where Site == CrunchyBlog {
               EmployeeTile(name: "Dana Franklin", title: "Engineering Consultant", imageUrl: URL(string: "images/dana-franklin.jpg")!)
               EmployeeTile(name: "Alissa Nordmoe", title: "Engineering Consultant", imageUrl: URL(string: "images/alissa-nordmoe.png")!)
               EmployeeTile(name: "Luke Street", title: "Engineering Consultant", imageUrl: URL(string: "images/luke-street.jpg")!)
-            }.class("grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-700")
-          }.class("bg-cb-yellow ml-auto mr-auto px-8 py-16")
+            }
+            .class("grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-700")
+          }
+          .class("bg-cb-yellow ml-auto mr-auto px-8 py-16")
           
           Wrapper {
             Div {
@@ -140,25 +160,28 @@ extension Theme where Site == CrunchyBlog {
                 url: URL(string: "mailto:info@crunchybananas.com?Subject=Let%27s%20Chat%21")!
               )
             }
-          }.class("bg-cb-dark-blue text-white px-8 py-16")
+          }
+          .class("bg-cb-dark-blue text-white px-8 py-16")
           SiteFooter()
         }
       )
     }
     
-    func makeSectionHTML(for section: Section<CrunchyBlog>,
-                         context: PublishingContext<CrunchyBlog>) throws -> HTML {
+    func makeSectionHTML(for section: Section<CrunchyBlog>, context: PublishingContext<CrunchyBlog>) throws -> HTML {
       HTML(
         .lang(context.site.language),
         .head(for: section, on: context.site),
-        .body {
-          SiteHeader(context: context, selectedSelectionID: section.id)
-          Wrapper {
-            // H1(section.title)
-            ItemList(items: section.items, site: context.site)
-          }.class("m-20 mt-10")
-          SiteFooter()
-        }
+        .body(
+          .class("item-page bg-gray-900"),
+          .components {
+            SiteHeader(context: context, selectedSelectionID: section.id)
+            Wrapper {
+              ItemList(items: section.items, site: context.site)
+            }
+            .class("m-20 mt-10")
+            SiteFooter()
+          }
+        )
       )
     }
     
@@ -168,16 +191,33 @@ extension Theme where Site == CrunchyBlog {
         .lang(context.site.language),
         .head(for: item, on: context.site),
         .body(
-          .class("item-page"),
+          .class("item-page bg-gray-900"),
           .components {
             SiteHeader(context: context, selectedSelectionID: item.sectionID)
             Wrapper {
-              Article {
-                Text(item.metadata.authors.joined(separator: ", "))
-                Div(item.content.body).class("content")
-                Span("Tagged with: ")
-                ItemTagList(item: item, site: context.site)
+              Div {
+                Article {
+                  Div {
+                    H1 {
+                      Text(item.title)
+                    }
+                    .class("text-4xl font-bold md:tracking-tight md:text-5xl")
+                    Paragraph {
+                      Text(item.metadata.authors.joined(separator: ", "))
+                      Text(" • ")
+                      Text(item.date.formatted(date: .long, time: .omitted))
+                    }
+                    .class("text-sm")
+                    Div(item.content.body)
+                      .class("content")
+                    ItemTagList(item: item, site: context.site)
+                  }
+                  .class("space-y-6")
+                }
+                .class("space-y-8 dark:bg-gray-800 dark:text-gray-50 p-6")
+                .class("container mx-auto overflow-hidden rounded-lg shadow-sm scrollbar-none")
               }
+              .class("max-w-4xl py-16 mx-auto space-y-12")
             }
             SiteFooter()
           }
@@ -190,35 +230,39 @@ extension Theme where Site == CrunchyBlog {
       HTML(
         .lang(context.site.language),
         .head(for: page, on: context.site),
-        .body {
-          SiteHeader(context: context, selectedSelectionID: nil)
-          Wrapper(page.body)
-          SiteFooter()
-        }
+        .body(
+          .components {
+            SiteHeader(context: context, selectedSelectionID: nil)
+            Wrapper(page.body)
+            SiteFooter()
+          }
+        )
       )
     }
     
-    func makeTagListHTML(for page: TagListPage,
-                         context: PublishingContext<CrunchyBlog>) throws -> HTML? {
+    func makeTagListHTML(for page: TagListPage, context: PublishingContext<CrunchyBlog>) throws -> HTML? {
       HTML(
         .lang(context.site.language),
         .head(for: page, on: context.site),
-        .body {
-          SiteHeader(context: context, selectedSelectionID: nil)
-          Wrapper {
-            H1("Browse all tags")
-            List(page.tags.sorted()) { tag in
-              ListItem {
-                Link(tag.string,
-                     url: context.site.path(for: tag).absoluteString
-                )
+        .body(
+          .class("item-page bg-gray-900"),
+          .components {
+            SiteHeader(context: context, selectedSelectionID: nil)
+            Wrapper {
+              H1("Browse all tags")
+              List(page.tags.sorted()) { tag in
+                ListItem {
+                  Link(tag.string,
+                       url: context.site.path(for: tag).absoluteString
+                  )
+                }
+                .class("tag")
               }
-              .class("tag")
+              .class("all-tags")
             }
-            .class("all-tags")
+            SiteFooter()
           }
-          SiteFooter()
-        }
+        )
       )
     }
     
@@ -227,30 +271,33 @@ extension Theme where Site == CrunchyBlog {
       HTML(
         .lang(context.site.language),
         .head(for: page, on: context.site),
-        .body {
-          SiteHeader(context: context, selectedSelectionID: nil)
-          Wrapper {
-            H1 {
-              Text("Tagged with ")
-              Span(page.tag.string).class("tag")
+        .body(
+          .class("item-page bg-gray-900"),
+          .components {
+            SiteHeader(context: context, selectedSelectionID: nil)
+            Wrapper {
+              H1 {
+                Text("Tagged with ")
+                Span(page.tag.string).class("tag")
+              }
+              
+              Link("Browse all tags",
+                   url: context.site.tagListPath.absoluteString
+              )
+              .class("browse-all")
+              
+              ItemList(
+                items: context.items(
+                  taggedWith: page.tag,
+                  sortedBy: \.date,
+                  order: .descending
+                ),
+                site: context.site
+              )
             }
-            
-            Link("Browse all tags",
-                 url: context.site.tagListPath.absoluteString
-            )
-            .class("browse-all")
-            
-            ItemList(
-              items: context.items(
-                taggedWith: page.tag,
-                sortedBy: \.date,
-                order: .descending
-              ),
-              site: context.site
-            )
+            SiteFooter()
           }
-          SiteFooter()
-        }
+        )
       )
     }
   }

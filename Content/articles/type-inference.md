@@ -3,8 +3,8 @@ authors: Cory Loken
 date: 2022-07-25 15:41
 description: Talking about type inference.
 tags: howto, article
+title: Type Inference 
 ---
-# Type Inference 
 
 Swift can figure out what sort of type the variable using type inference. For example
 

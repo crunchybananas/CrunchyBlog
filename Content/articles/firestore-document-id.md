@@ -2,7 +2,7 @@
 authors: Cory Loken
 date: 2022-11-30 15:42
 title: Firestore DocumentID
-description: Firestore DocumentID.
+description: Firestore DocumentID description.
 tags: howto, article, swiftui, swift, xcode
 ---
 

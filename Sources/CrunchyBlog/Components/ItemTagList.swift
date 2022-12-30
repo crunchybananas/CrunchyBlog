@@ -17,6 +17,6 @@ internal struct ItemTagList<CrunchyBlog: Website>: Component {
       Link(tag.string, url: site.path(for: tag).absoluteString)
         .class("bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3")
     }
-    .class("tag-list")
+    .class("tag-list flex flex-wrap py-6 space-x-2 border-t border-dashed dark:border-gray-400")
   }
 }
