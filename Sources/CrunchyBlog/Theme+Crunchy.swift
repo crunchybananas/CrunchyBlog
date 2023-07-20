@@ -141,7 +141,7 @@ extension Theme where Site == CrunchyBlog {
             Div {
               EmployeeTile(name: "Dana Franklin", title: "Engineering Consultant", imageUrl: URL(string: "images/dana-franklin.jpg")!)
               EmployeeTile(name: "Alissa Nordmoe", title: "Engineering Consultant", imageUrl: URL(string: "images/alissa-nordmoe.png")!)
-              EmployeeTile(name: "Luke Street", title: "Engineering Consultant", imageUrl: URL(string: "images/luke-street.jpg")!)
+              EmployeeTile(name: "Corey Morrison", title: "Engineering Consultant", imageUrl: URL(string: "images/corey-morrison.jpg")!)
             }
             .class("grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-700")
           }
